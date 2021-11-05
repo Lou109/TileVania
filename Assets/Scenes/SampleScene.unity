@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 1597170795}
   - component: {fileID: 1597170794}
   - component: {fileID: 1597170793}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform  Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1309,80 +1309,28 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 1597170795}
     m_ColliderPaths:
-    - - X: -40035900
-        Y: -50120041
-      - X: -40035900
-        Y: -50120000
-      - X: -10009100
-        Y: -50120000
-      - X: -10009100
-        Y: -50120041
-      - X: -10009041
-        Y: -50120100
-      - X: 20018041
-        Y: -50120100
-      - X: 20018100
-        Y: -50120041
-      - X: 20018100
-        Y: -50120000
-      - X: 90081008
-        Y: -50120000
-      - X: 90081008
-        Y: 10024000
-      - X: 60054000
+    - - X: 60054000
         Y: 10024000
       - X: 60054000
         Y: -30072002
       - X: 10009000
         Y: -30072002
       - X: 10009000
-        Y: -10024100
-      - X: 10009041
-        Y: -10024100
-      - X: 10009100
-        Y: -10024041
-      - X: 10009100
-        Y: 41
-      - X: 10009041
-        Y: 100
-      - X: -10008900
-        Y: 100
-      - X: -10008900
-        Y: 41
-      - X: -10008959
-        Y: 100
-      - X: -20018041
-        Y: 100
-      - X: -20018100
-        Y: 41
-      - X: -20018100
-        Y: 100
-      - X: -80072041
-        Y: 100
-      - X: -80072100
-        Y: 41
-      - X: -80072100
-        Y: -40096041
-      - X: -80072041
-        Y: -40096100
-      - X: -80072000
-        Y: -40096100
-      - X: -80072000
-        Y: -50120000
-      - X: -50045104
-        Y: -50120000
-      - X: -50045104
-        Y: -50120041
-      - X: -50045045
-        Y: -50120100
-      - X: -40035959
-        Y: -50120100
-    - - X: 10008999
-        Y: -40095900
+        Y: -40096000
+      - X: 10008999
+        Y: -40096000
       - X: 10009000
         Y: -30072002
       - X: 10009000
-        Y: -40095900
+        Y: 0
+      - X: -80072000
+        Y: 0
+      - X: -80072000
+        Y: -50120000
+      - X: 90081008
+        Y: -50120000
+      - X: 90081008
+        Y: 10024000
   m_CompositePaths:
     m_Paths:
     - - {x: 9.008071, y: -5.012}
@@ -1390,8 +1338,8 @@ CompositeCollider2D:
       - {x: 6.0054, y: 1.0023707}
       - {x: 6.0053706, y: -3.0072002}
       - {x: 1.0009, y: -3.007171}
-      - {x: 1.0008748, y: 0.00001}
-      - {x: -8.00721, y: -0.0000252}
+      - {x: 1.0008707, y: 0}
+      - {x: -8.0072, y: -0.000029300001}
       - {x: -8.007171, y: -5.012}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
@@ -6242,28 +6190,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1186962057, guid: 244b2dfc20e7f4324b1215038c8d1613, type: 3}
-      propertyPath: m_LinearDrag
-      value: 0
+      propertyPath: m_Interpolate
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1186962057, guid: 244b2dfc20e7f4324b1215038c8d1613, type: 3}
-      propertyPath: m_GravityScale
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1186962058, guid: 244b2dfc20e7f4324b1215038c8d1613, type: 3}
-      propertyPath: m_Size.x
-      value: 0.64
-      objectReference: {fileID: 0}
-    - target: {fileID: 2913290387002284309, guid: 244b2dfc20e7f4324b1215038c8d1613, type: 3}
-      propertyPath: jumpSpeed
-      value: 25
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5164851468445485139, guid: 244b2dfc20e7f4324b1215038c8d1613, type: 3}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5164851468445485139, guid: 244b2dfc20e7f4324b1215038c8d1613, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5164851468445485139, guid: 244b2dfc20e7f4324b1215038c8d1613, type: 3}
       propertyPath: m_LocalPosition.x
