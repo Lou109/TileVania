@@ -6241,9 +6241,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1186962057, guid: 244b2dfc20e7f4324b1215038c8d1613, type: 3}
+      propertyPath: m_LinearDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1186962057, guid: 244b2dfc20e7f4324b1215038c8d1613, type: 3}
+      propertyPath: m_GravityScale
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1186962058, guid: 244b2dfc20e7f4324b1215038c8d1613, type: 3}
       propertyPath: m_Size.x
       value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913290387002284309, guid: 244b2dfc20e7f4324b1215038c8d1613, type: 3}
+      propertyPath: jumpSpeed
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5164851468445485139, guid: 244b2dfc20e7f4324b1215038c8d1613, type: 3}
       propertyPath: m_RootOrder

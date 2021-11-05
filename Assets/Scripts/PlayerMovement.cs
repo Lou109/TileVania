@@ -6,10 +6,12 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float runSpeed = 10f;
+    [SerializeField] float jumpSpeed = 5f;
 
     Rigidbody2D myRigidbody;
     Animator myAnimator;
     Vector2 moveInput;
+
 
     void Start()
     {
@@ -25,8 +27,15 @@ public class PlayerMovement : MonoBehaviour
 
     void OnMove(InputValue value)
     {
-        moveInput = value.Get<Vector2>();
-        Debug.Log(moveInput);
+        moveInput = value.Get<Vector2>();     
+    }
+
+    void OnJump(InputValue value)
+    {
+        if(value.isPressed)
+        {
+            myRigidbody.velocity += new Vector2(0f, jumpSpeed);
+        }
     }
 
     void Run()
@@ -37,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
         bool playerHasHorizontalSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
         myAnimator.SetBool("isRunning", playerHasHorizontalSpeed);
     }
+
     void FlipSprite()
     {
         bool playerHasHorizontalSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
