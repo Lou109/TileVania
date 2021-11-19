@@ -11,7 +11,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Vector2 deathKick = new Vector2(10f, 10f);
     [SerializeField] GameObject bullet;
     [SerializeField] Transform gun;
-    bool isJumping;
 
     Rigidbody2D myRigidbody;
     Animator myAnimator;
@@ -21,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     float gravityScaleAtStart;
 
     bool isAlive = true;
-
+   
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
@@ -38,7 +37,30 @@ public class PlayerMovement : MonoBehaviour
         FlipSprite();
         ClimbLadder();
         Die();
-        
+    }
+
+    void FixedUpdate()
+    {
+        if (transform.parent != null && transform.parent.tag == "Player")
+        {
+            this.transform.parent = null;
+        }
+    }
+    void OnCollisionEnter2D(Collision2D other)
+    { 
+
+        if (other.gameObject.CompareTag("MovingPlatform"))
+        {
+            this.transform.parent = other.transform;   
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Ground"))
+        {
+            this.transform.parent = null;
+        }
     }
 
     void OnFire(InputValue value)
@@ -64,7 +86,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (value.isPressed)
         {
-            
+
             myRigidbody.velocity += new Vector2(0f, jumpSpeed);
         }
         
@@ -116,6 +138,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 }
+
 
 
 

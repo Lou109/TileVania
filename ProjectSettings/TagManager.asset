@@ -50,9 +50,6 @@ TagManager:
   - name: Water
     uniqueID: 2001715107
     locked: 0
-  - name: Platforms
-    uniqueID: 883290111
-    locked: 0
   - name: Moving Platform
     uniqueID: 103342789
     locked: 0
@@ -61,6 +58,9 @@ TagManager:
     locked: 0
   - name: Hazards
     uniqueID: 3146162067
+    locked: 0
+  - name: Platforms
+    uniqueID: 883290111
     locked: 0
   - name: Enemies
     uniqueID: 598134875
