@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - MovingPlatform
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -20,7 +22,7 @@ TagManager:
   - Enemies
   - Hazards
   - Bullets
-  - 
+  - Moving Platforms
   - 
   - 
   - 
@@ -50,6 +52,9 @@ TagManager:
     locked: 0
   - name: Platforms
     uniqueID: 883290111
+    locked: 0
+  - name: Moving Platform
+    uniqueID: 103342789
     locked: 0
   - name: Climbing
     uniqueID: 2710510793
