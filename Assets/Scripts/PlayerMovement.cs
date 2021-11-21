@@ -37,9 +37,10 @@ public class PlayerMovement : MonoBehaviour
         FlipSprite();
         ClimbLadder();
         Die();
+        Wait();
     }
 
-    void FixedUpdate()
+    void Wait()
     {
         if (transform.parent != null && transform.parent.tag == "Player")
         {
