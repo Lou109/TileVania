@@ -122487,7 +122487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 247972035949871303, guid: 64dbb3a14f7364de49b3a6bd1a03d7e9, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
-      value: 1.7818182
+      value: 1.7777778
       objectReference: {fileID: 0}
     - target: {fileID: 247972035949871303, guid: 64dbb3a14f7364de49b3a6bd1a03d7e9, type: 3}
       propertyPath: m_Lens.OrthographicSize
@@ -122559,7 +122559,7 @@ PrefabInstance:
       objectReference: {fileID: 346774151}
     - target: {fileID: 247972036090308166, guid: 64dbb3a14f7364de49b3a6bd1a03d7e9, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
-      value: 1.7818182
+      value: 1.7777778
       objectReference: {fileID: 0}
     - target: {fileID: 247972036090308167, guid: 64dbb3a14f7364de49b3a6bd1a03d7e9, type: 3}
       propertyPath: m_BoundingShape2D
@@ -122587,7 +122587,7 @@ PrefabInstance:
       objectReference: {fileID: 2020525807}
     - target: {fileID: 247972037070771966, guid: 64dbb3a14f7364de49b3a6bd1a03d7e9, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
-      value: 1.7818182
+      value: 1.7777778
       objectReference: {fileID: 0}
     - target: {fileID: 247972037070771966, guid: 64dbb3a14f7364de49b3a6bd1a03d7e9, type: 3}
       propertyPath: m_Lens.OrthographicSize
