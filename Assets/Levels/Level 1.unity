@@ -22334,6 +22334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Ginger (Player) '
       objectReference: {fileID: 0}
+    - target: {fileID: 5164851468445485150, guid: 244b2dfc20e7f4324b1215038c8d1613, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6081624472804273311, guid: 244b2dfc20e7f4324b1215038c8d1613, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.503
