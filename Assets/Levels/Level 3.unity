@@ -2096,6 +2096,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &568600227 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 247972035248855963, guid: 64dbb3a14f7364de49b3a6bd1a03d7e9, type: 3}
+  m_PrefabInstance: {fileID: 247972035157336859}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &608872967
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44773,6 +44778,7 @@ GameObject:
   - component: {fileID: 1979396985}
   - component: {fileID: 1979396984}
   - component: {fileID: 1979396986}
+  - component: {fileID: 1979396987}
   m_Layer: 9
   m_Name: Background  Tilemap
   m_TagString: Untagged
@@ -124358,6 +124364,20 @@ PolygonCollider2D:
       - {x: 24.088259, y: -9.050852}
       - {x: 94.72112, y: -9.216743}
       - {x: 94.82298, y: 22.570988}
+--- !u!114 &1979396987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979396982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4290bf275133349618a385953f9ba077, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 568600227}
+  relativeMove: 0.3
 --- !u!4 &1980167889 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9171970036622160397, guid: 7d51be0cf20294993930e37b060cc28a, type: 3}
@@ -125073,11 +125093,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 247972035248855963, guid: 64dbb3a14f7364de49b3a6bd1a03d7e9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.129063
+      value: -23.05
       objectReference: {fileID: 0}
     - target: {fileID: 247972035248855963, guid: 64dbb3a14f7364de49b3a6bd1a03d7e9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 47.5294
+      value: 47.529
       objectReference: {fileID: 0}
     - target: {fileID: 247972035248855963, guid: 64dbb3a14f7364de49b3a6bd1a03d7e9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -125114,7 +125134,7 @@ PrefabInstance:
     - target: {fileID: 247972035949871296, guid: 64dbb3a14f7364de49b3a6bd1a03d7e9, type: 3}
       propertyPath: m_BoundingShape2D
       value: 
-      objectReference: {fileID: 1979396986}
+      objectReference: {fileID: 0}
     - target: {fileID: 247972035949871297, guid: 64dbb3a14f7364de49b3a6bd1a03d7e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25.675753
@@ -125214,11 +125234,11 @@ PrefabInstance:
     - target: {fileID: 247972036090308167, guid: 64dbb3a14f7364de49b3a6bd1a03d7e9, type: 3}
       propertyPath: m_BoundingShape2D
       value: 
-      objectReference: {fileID: 1979396986}
+      objectReference: {fileID: 0}
     - target: {fileID: 247972037070771964, guid: 64dbb3a14f7364de49b3a6bd1a03d7e9, type: 3}
       propertyPath: m_BoundingShape2D
       value: 
-      objectReference: {fileID: 1979396986}
+      objectReference: {fileID: 0}
     - target: {fileID: 247972037070771965, guid: 64dbb3a14f7364de49b3a6bd1a03d7e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25.675753
